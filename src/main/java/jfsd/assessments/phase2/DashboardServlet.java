@@ -39,8 +39,6 @@ public class DashboardServlet extends HttpServlet {
 		writer.println("<h4>User Name: "+user.getUname() +"</h4>");
 		writer.println("<h4>Name: "+user.getFname() +"</h4>");
 		writer.println("<h4>E-mail: "+user.getEmail() +"</h4>");
-//		writer.println("<div><a href='profile?email="+uname+"'>Profile</a>");
 		writer.println("</div><br/><a href='Logout'>Logout</a></body></html>");
 	}
-
 }

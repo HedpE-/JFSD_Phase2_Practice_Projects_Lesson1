@@ -21,7 +21,6 @@ public class LoginServlet extends HttpServlet {
 	 */
 	public LoginServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -37,7 +36,6 @@ public class LoginServlet extends HttpServlet {
 			String password = request.getParameter("password").toString();
 			
 			if(user.validatePassword(password)) {
-//				RequestDispatcher rd = request.getRequestDispatcher("Dashboard?uname="+user.getUname());
 				response.sendRedirect("Dashboard?uname="+user.getUname());
 				return;
 			}
